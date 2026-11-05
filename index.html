@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f1ea" />
+  <meta name="description" content="LEORA — những câu chuyện để ở lại. Một không gian nghe truyện audio dịu dàng, tinh tế và đầy cảm xúc." />
+  <title>LEORA — Những câu chuyện để ở lại</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Một góc nhỏ dành cho những tâm hồn thích lắng nghe <span class="announcement-line"></span> <span class="announcement-note">EST. 2026</span></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="LEORA trang chủ">
+      <span class="brand-mark">L<span class="brand-star">✳</span></span>
+      <span class="brand-name">LEORA</span>
+      <span class="brand-sub">AUDIO STORIES</span>
+    </a>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a class="nav-link active" href="#discover">Khám phá</a>
+      <a class="nav-link" href="#collections">Tuyển tập</a>
+      <a class="nav-link" href="#library" id="libraryNav">Thư viện <span class="nav-count" id="favoriteCount">0</span></a>
+      <a class="nav-link" href="#about">Về LEORA</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="searchToggle" aria-label="Tìm kiếm"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="profile-button" id="profileButton"><span class="profile-initial">L</span><span>Xin chào</span></button>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Mở trình đơn"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="search-panel" id="searchPanel" aria-hidden="true">
+    <div class="search-inner"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="searchInput" type="search" placeholder="Tìm một câu chuyện, một cảm xúc..." autocomplete="off" /><kbd>ESC</kbd><button class="search-close" id="searchClose" aria-label="Đóng tìm kiếm">×</button></div>
+    <div class="search-hint">Gợi ý: thanh xuân · chữa lành · những ngày mưa</div>
+  </div>
+
+  <main>
+    <section class="hero section-shell" id="discover">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-rule"></span> CHẠM VÀO NHỮNG ĐIỀU DỊU DÀNG</div>
+        <h1>Có những câu chuyện<br />không chỉ để nghe,<br /><em>mà để nhớ.</em></h1>
+        <p class="hero-description">Một giọng kể, một khoảng lặng, một thế giới rất riêng. Để mỗi lần nhấn phát, ta tìm thấy một điều gì đó thân quen trong chính mình.</p>
+        <div class="hero-cta-row">
+          <button class="primary-button" id="heroPlay"><span class="button-play">▶</span> Bắt đầu lắng nghe <span class="button-arrow">↗</span></button>
+          <a class="text-link" href="#stories">Khám phá thư viện <span>↓</span></a>
+        </div>
+        <div class="hero-footnote"><span class="avatar-stack"><i>✦</i><i>♫</i><i>♡</i></span><span><strong>Những thanh âm có ký ức</strong><br />Được tuyển chọn cho những phút giây của riêng bạn</span></div>
+      </div>
+      <div class="hero-art-wrap">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-art" role="img" aria-label="Ảnh bìa truyện Mùa đi qua hiên nhà">
+          <div class="hero-art-image"></div>
+          <div class="hero-art-shade"></div>
+          <div class="hero-art-top"><span>LEORA ORIGINALS</span><span>01 / 06</span></div>
+          <div class="hero-art-title"><span class="cover-kicker">MỘT CÂU CHUYỆN VỀ NHỮNG ĐIỀU CHƯA KỊP NÓI</span><h2>Mùa đi qua<br /><em>hiên nhà</em></h2><span class="cover-author">TÁC GIẢ · AN NHIÊN</span></div>
+          <button class="hero-art-play" id="coverPlay" aria-label="Phát Mùa đi qua hiên nhà"><span>▶</span></button>
+          <div class="hero-art-bottom"><span>TRUYỆN TÌNH CẢM</span><span>08 TẬP · 3H 24M</span></div>
+        </div>
+        <div class="floating-note"><span class="floating-note-icon">♫</span><span><strong>Đang được yêu thích</strong><small>Mùa đi qua hiên nhà</small></span><span class="note-equalizer"><i></i><i></i><i></i><i></i></span></div>
+        <span class="hero-side-caption">LISTEN SLOWLY · FEEL DEEPLY</span>
+      </div>
+      <div class="hero-index"><span>01</span><i></i><span>04</span></div>
+    </section>
+
+    <section class="quote-strip"><div class="quote-mark">“</div><p>Đôi khi, điều ta cần không phải một lời khuyên — chỉ là một câu chuyện khiến lòng mình dịu lại.</p><span class="quote-author">— LEORA JOURNAL</span></section>
+
+    <section class="stories-section section-shell" id="stories">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-rule"></span> THE LEORA LIBRARY</div><h2>Một câu chuyện,<br /><em>một miền cảm xúc.</em></h2></div>
+        <div class="section-heading-side"><p>Những câu chuyện được chọn bằng sự tinh tế — cho ngày nhiều nắng, cho đêm nhiều suy tư, và cho cả những lúc chẳng biết mình đang cần gì.</p><a class="underlined-link" href="#collections">Xem tất cả tuyển tập <span>↗</span></a></div>
+      </div>
+      <div class="filter-bar" id="filterBar">
+        <div class="filter-label">LỌC THEO TÂM TRẠNG</div>
+        <div class="filter-pills">
+          <button class="filter-pill selected" data-filter="Tất cả">Tất cả <span>06</span></button>
+          <button class="filter-pill" data-filter="Tình cảm">Tình cảm</button>
+          <button class="filter-pill" data-filter="Chữa lành">Chữa lành</button>
+          <button class="filter-pill" data-filter="Thanh xuân">Thanh xuân</button>
+          <button class="filter-pill" data-filter="Tản văn">Tản văn</button>
+        </div>
+        <button class="sort-button" id="sortButton">Mới cập nhật <span>⌄</span></button>
+      </div>
+      <div class="story-grid" id="storyGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>Chưa tìm thấy câu chuyện này</h3><p>Thử một từ khóa hoặc thể loại khác nhé.</p><button class="text-link" id="clearFilters">Xóa bộ lọc ↗</button></div>
+      <div class="load-more-wrap"><button class="outline-button" id="loadMore">Khám phá thêm <span>↓</span></button><span class="load-more-note">THƯ VIỆN ĐƯỢC CẬP NHẬT MỖI TUẦN</span></div>
+    </section>
+
+    <section class="editorial-section" id="collections">
+      <div class="editorial-inner section-shell">
+        <div class="editorial-copy"><div class="eyebrow light"><span class="eyebrow-rule"></span> THE QUIET COLLECTION</div><h2>Chậm lại một chút.<br /><em>Nghe lòng mình kể.</em></h2><p>Một tuyển tập dành cho những ngày bạn muốn tạm rời khỏi nhịp sống vội vàng. Không cần phải đi đâu xa, chỉ cần một chiếc tai nghe và một khoảng trời riêng.</p><button class="light-button" id="collectionPlay">Nghe tuyển tập <span>↗</span></button><div class="editorial-meta"><span>06 CÂU CHUYỆN</span><i></i><span>02H 48M</span></div></div>
+        <div class="editorial-image"><div class="editorial-image-inner"></div><div class="editorial-image-frame"></div><div class="editorial-image-caption">A SOFTER PLACE TO LAND <span>✳</span></div></div>
+        <div class="editorial-number">02</div>
+      </div>
+    </section>
+
+    <section class="continue-section section-shell" id="library">
+      <div class="continue-header"><div><div class="eyebrow"><span class="eyebrow-rule"></span> YOUR LITTLE CORNER</div><h2>Góc nhỏ <em>của bạn.</em></h2></div><span class="saved-label" id="savedLabel">0 CÂU CHUYỆN ĐÃ LƯU</span></div>
+      <div class="continue-content">
+        <div class="continue-card" id="continueCard"><div class="continue-thumb" id="continueThumb"><span>LEORA<br />JOURNAL</span></div><div class="continue-info"><span class="mini-label">NGHE TIẾP</span><h3 id="continueTitle">Chưa có câu chuyện nào</h3><p id="continueMeta">Những câu chuyện bạn nghe gần đây sẽ nằm ở đây.</p><div class="continue-progress"><span id="continueProgress"></span></div><button class="continue-link" id="continueButton">Tiếp tục nghe <span>↗</span></button></div></div>
+        <div class="saved-list"><div class="saved-list-head"><span>ĐÃ LƯU LẠI</span><span id="savedListCount">00</span></div><div id="savedList" class="saved-items"><p class="saved-empty">Nhấn biểu tượng ♡ ở một câu chuyện để lưu lại nơi này.</p></div></div>
+      </div>
+    </section>
+
+    <section class="about-section section-shell" id="about"><div class="about-symbol">L<span>✳</span></div><div class="about-content"><div class="eyebrow"><span class="eyebrow-rule"></span> A NOTE FROM LEORA</div><h2>Không chỉ là nghe.<br /><em>Là cảm nhận.</em></h2><p>LEORA được tạo nên từ niềm tin rằng một câu chuyện hay có thể ở lại rất lâu — trong một buổi chiều, một chuyến xe, hay một đêm bạn cần ai đó kể chuyện. Chúng mình muốn giữ nơi này thật dịu dàng, để bạn luôn có một chốn quay về.</p><a class="underlined-link" href="mailto:hello@leora.audio">Gửi LEORA một lời nhắn <span>↗</span></a></div><div class="about-signature">with a little<br /><em>love & listening,</em><br /><span>LEORA</span></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="footer-brand" href="#top">LEORA<span>✳</span></a><p>Những câu chuyện để ở lại.</p><a class="back-top" href="#top">LÊN ĐẦU TRANG ↑</a></div><div class="footer-bottom"><span>© 2026 LEORA AUDIO. MADE WITH CARE.</span><span>LISTEN SLOWLY · FEEL DEEPLY</span><span>VIETNAM <i>✳</i></span></div></footer>
+
+  <div class="player" id="player">
+    <div class="player-track"><div class="player-cover" id="playerCover"><span>✳</span></div><div class="player-track-text"><strong id="playerTitle">Mùa đi qua hiên nhà</strong><span id="playerEpisode">Tập 01 · Một chiều rất khẽ</span></div><button class="player-heart" id="playerHeart" aria-label="Lưu truyện">♡</button></div>
+    <div class="player-main"><div class="player-controls"><button class="control-button" id="previousButton" aria-label="Tập trước">|◀</button><button class="play-button" id="playButton" aria-label="Phát hoặc tạm dừng"><span>▶</span></button><button class="control-button" id="nextButton" aria-label="Tập tiếp">▶|</button></div><div class="timeline"><span id="currentTime">00:00</span><input type="range" id="progressRange" min="0" max="100" value="0" aria-label="Tiến trình phát" /><span id="durationTime">03:24</span></div></div>
+    <div class="player-extra"><span class="playing-label" id="playingLabel"><i></i> SẴN SÀNG LẮNG NGHE</span><button class="upload-button" id="uploadButton" title="Tải file MP3 của bạn"><svg viewBox="0 0 24 24"><path d="M12 16V4m0 0L7 9m5-5 5 5M4 16v4h16v-4"/></svg><span>Thêm MP3</span></button><input type="file" id="audioUpload" accept="audio/*,.mp3,.m4a,.wav,.ogg" hidden /></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="audioElement" preload="metadata"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
